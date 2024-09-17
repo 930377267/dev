@@ -1,0 +1,61 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(55, 204, 75);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    background-color: rgb(91, 36, 194);
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.position-static, .position-relative, .position-absolute, .position-fixed{
+    border: 2px solid rgb(63, 25, 202);
+    padding: 10px;
+    margin: 20px 0;
+    background-color: rgb(197, 28, 28);
+    position: static;
+}
+
+.position-relative{
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+.position-relative .inner-box{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgb(218, 15, 15);
+    padding: 5px;
+}
+
+.position-absolute{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.position-fixed{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+footer{
+    background-color: rgb(55, 20, 255);
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
